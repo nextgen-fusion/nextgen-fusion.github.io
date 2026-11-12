@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Core Web Vitals Quick Fixes | NextGen Fusion</title>
+<meta name="description" content="Practical Core Web Vitals fixes for LCP, INP and CLS on WordPress, Shopify and Next.js sites, plus a free tool to check the basics on a live URL.">
+<link rel="canonical" href="https://nextgen-fusion.github.io/core-web-vitals-quick-fixes/">
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:48px 20px;color:#1a1a2e;line-height:1.6}
+img{width:96px;height:96px;border-radius:16px}
+a{color:#4f46e5}
+.btn{display:inline-block;background:#4f46e5;color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600}
+li{margin:4px 0}
+footer{margin-top:48px;font-size:14px;color:#666}
+nav{margin:24px 0;padding:12px 0;border-top:1px solid #eee;border-bottom:1px solid #eee}
+nav a{margin:0 14px 8px 0;display:inline-block;text-decoration:none;font-size:14px;font-weight:600}
+nav a:hover{text-decoration:underline}
+nav a[aria-current="page"]{color:#1a1a2e}
+h2{margin-top:1.8em}
+.lead{font-size:1.05em}
+</style>
+</head>
+<body>
+<img src="/logo.png" alt="NextGen Fusion logo">
+<h1>Core Web Vitals quick fixes</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/website-launch-checklist/">Launch checklist</a>
+<a href="/shopify-vs-wordpress-india/">Shopify vs WordPress</a>
+<a href="/core-web-vitals-quick-fixes/" aria-current="page">Core Web Vitals</a>
+<a href="/work/">Our work</a>
+<a href="/free-tools/">Free tools</a>
+</nav>
+<p class="lead">Core Web Vitals are Google’s names for whether a page feels fast and stable: how quickly the main content appears (LCP), how soon the page responds to a tap (INP), and whether the layout jumps while it loads (CLS). You do not need to memorise the acronyms. You need to fix the things that usually cause a poor score.</p>
+<p>For WordPress sites, we keep a longer guide on <a href="https://www.nextgenfusion.in/blog/core-web-vitals-wordpress/">Core Web Vitals for WordPress</a>. Shopify stores have their own bottlenecks; see <a href="https://www.nextgenfusion.in/blog/shopify-speed-optimisation/">Shopify speed optimisation</a> for the theme and app issues we see most often.</p>
+
+<h2>1. Stop the largest image being the slowest thing on the page</h2>
+<p>The largest image or banner is often the reason LCP is poor. Compress it, serve a modern format where you can, and do not lazy-load the hero image — the browser should fetch that first. Replace auto-playing background videos with a still image on mobile if the video is only decorative.</p>
+
+<h2>2. Cut what the browser has to download before it can paint</h2>
+<p>Every extra font, slider, chat widget and marketing pixel competes with the content. Load only the fonts you use, prefer system fonts where it will not hurt the design, and defer scripts that are not needed for the first view. If a plugin or app is not visibly doing something on the page, turn it off and measure again.</p>
+
+<h2>3. Reserve space so the layout does not jump</h2>
+<p>CLS usually comes from images, ads or embeds without width and height, or from banners that insert themselves above the content after load. Set dimensions on images, avoid inserting a bar at the top after the first paint, and be careful with web fonts that swap late and change the size of the text.</p>
+
+<h2>4. Measure a real page, not only the home page</h2>
+<p>A fast home page with a heavy product or blog template is a common pattern. Test the pages people actually land on. A practical starting point is our <a href="https://www.nextgenfusion.in/free-seo-checker/">free SEO checker</a>, which reads a live URL and flags basic technical problems such as missing titles, HTTPS issues and mobile setup. Use it alongside PageSpeed Insights or Search Console for the lab and field data.</p>
+<p>If the site is a Next.js app, hosting choice also affects how quickly pages reach the visitor. We compared <a href="https://www.nextgenfusion.in/blog/nextjs-hosting-vercel-netlify-cloudflare/">Vercel, Netlify and Cloudflare for Next.js hosting</a> in a separate guide.</p>
+<p>These fixes will not turn every site into a perfect score, and a score is not the same as a sale. They will remove the usual reasons a page feels slow. If you want a developer to do the work, NextGen Fusion’s team in Lucknow and Mumbai can take it from a measured report.</p>
+
+<footer>&copy; NextGen Fusion &middot; <a href="https://www.nextgenfusion.in/">www.nextgenfusion.in</a> &middot; <a href="https://github.com/nextgen-fusion">GitHub</a></footer>
+</body>
+</html>
